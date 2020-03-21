@@ -1,0 +1,28 @@
+version: '2'
+services:
+  python-flask:
+    container_name: python-flask
+    environment:
+    - LOG_LEVEL=INFO
+    logging:
+      options:
+        max-file: '10'
+        max-size: 50m
+    mem_limit: 512m
+    ports:
+    - 5000:5000
+    restart: always
+#    volumes:
+#    - /etc/localtime:/etc/localtime
+    image: docker-reg.niexiaoxu.com:55688/python-flask:20200322-d6b8266
+  redis:
+    container_name: redis
+    ports:
+    - 6379:6379
+    restart: always
+    logging:
+      options:
+        max-file: '10'
+        max-size: 50m
+    mem_limit: 512m
+    image: "redis:alpine"
