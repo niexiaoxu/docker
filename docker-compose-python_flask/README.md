@@ -9,4 +9,3 @@ conda version: 4.8.3
 python version: 3.7
 flask version: 1.1.1
 ```
-```
