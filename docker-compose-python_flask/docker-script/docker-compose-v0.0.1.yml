@@ -10,11 +10,11 @@ services:
         max-size: 50m
     mem_limit: 512m
     ports:
-    - 5000:5000
+    - 8091:8091
     restart: always
 #    volumes:
 #    - /etc/localtime:/etc/localtime
-    image: docker-reg.niexiaoxu.com:55688/python-flask:20200322-d6b8266
+    image: docker-reg.niexiaoxu.com:55688/python-flask:20200322-68d5aac
   redis:
     container_name: redis
     ports:
