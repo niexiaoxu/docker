@@ -44,3 +44,12 @@ command: docker-compose -f docker-compose-v0.0.1.yml ps
 ```
 https://docs.docker.com/compose/reference/overview/
 ```
+# 4 visit website
+```
+http://127.0.0.0:8091
+```
+# 5 How to update service ?
+```
+step1: commit and build image
+step2: update python-flask service's image version of docker-compose-v0.0.1.yml
+```
